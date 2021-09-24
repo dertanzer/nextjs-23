@@ -1,0 +1,31 @@
+{
+	"Button": {
+		"gift": "gift",
+		"rsvp": "rsvp",
+		"share": "share pictures",
+		"start": "start",
+		"gallery": "gallery",
+		"info": "info",
+		"subject": "RSVP for your wedding"
+	},
+	"Time": {
+		"days": "days",
+		"hours": "hours",
+		"minutes": "minutes",
+		"seconds": "seconds",
+		"date": "Saturday 23th, October 2021"
+	},
+	"Info": {
+		"celebration": "Celebration",
+		"ceremony": "Ceremony",
+		"action": "Open in Google Map"
+	},
+	"Pages": {
+		"gallery": "Gallery"
+	},
+	"Card": {
+		"welcome": "Welcome you",
+		"where": "To their Wedding",
+		"date": "Saturday 23th, October 2021"
+	}
+}
