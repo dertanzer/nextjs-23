@@ -27,8 +27,7 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
 		props: {
 			localisation: {
 				...require(`../localisation/${context.locale!.substring(0, 2)}.json`)
-			},
-			language: context.locale!.substring(0, 2)
+			}
 		},
 	};
 };

@@ -35,7 +35,7 @@ const Info: NextPage = () => {
 
 			</div>
 
-			<Wallpaper src="/images/cross-heart.png" alt="Helen &amp; Hadrien" height="500" width="500" />
+			<Wallpaper src="/images/cross-heart.png" alt="Helen & Hadrien" height="500" width="500" />
 
 		</MainContainer>
 

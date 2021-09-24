@@ -2,6 +2,7 @@ import MapSvg from '@components/MapSvg';
 import Modal from '@components/Modal';
 import { Fragment, useState } from 'react';
 import ButtonLink from './ButtonLink';
+import { useTranslations } from 'next-intl';
 
 interface TileProps {
 	title: string,
@@ -15,6 +16,8 @@ interface TileProps {
 export const Tile: React.FC<TileProps> = ({ title, location, iframeLink, locationLink, linkText, dateTime }) => {
 
 	const [show, setShow] = useState(false);
+
+	const t = useTranslations('Tile');
 
 	const time = new Intl.DateTimeFormat('default', {
 		hour: '2-digit',
@@ -33,13 +36,13 @@ export const Tile: React.FC<TileProps> = ({ title, location, iframeLink, locatio
 
 					<ul className="fields">
 						<li className="field">
-							<span className="key">Location</span>
+							<span className="key">{t('location')}</span>
 							<span className="value map-svg" onClick={() => setShow(prev => !prev)}>
 								<MapSvg />
 							</span>
 						</li>
 						<li className="field">
-							<span className="key">Time</span>
+							<span className="key">{t('time')}</span>
 							<span className="value">{time}</span>
 						</li>
 					</ul>

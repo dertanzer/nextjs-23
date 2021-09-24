@@ -23,9 +23,8 @@
 	"Pages": {
 		"gallery": "Gallerie"
 	},
-	"Card": {
-		"welcome": "Vous invitent",
-		"where": "À leur marriage",
-		"date": "Samedi 23 Octobre 2021"
+	"Tile": {
+		"location": "Lieu",
+		"time": "Heure"
 	}
 }

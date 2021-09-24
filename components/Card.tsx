@@ -13,12 +13,12 @@ export const Card: React.FC = () => {
 
 			<div className="desktop card">
 
-				<ImageWrapper src="/images/card-photo.jpg" alt="photo of Hadrien &amp; Helen" width="500" height="603" />
+				<ImageWrapper src="/images/card-photo.jpg" alt="photo of Hadrien & Helen" width="500" height="603" />
 
 				<div className="content">
 
 					<div className="names lady">Helen</div>
-					<div className="primary names">&amp;</div>
+					<div className="primary names">&</div>
 					<div className="names man">Hadrien</div>
 
 					<div className="secondary welcome">{t('welcome')}</div>
@@ -38,10 +38,10 @@ export const Card: React.FC = () => {
 
 				<div className="content">
 
-					<ImageWrapper src="/images/card-photo.jpg" alt="photo of Hadrien &amp; Helen" width="500" height="603" className="card-photo"/>
+					<ImageWrapper src="/images/card-photo.jpg" alt="photo of Hadrien & Helen" width="500" height="603" className="card-photo"/>
 
 					<div className="names lady">Helen</div>
-					<div className="primary names">&amp;</div>
+					<div className="primary names">&</div>
 					<div className="names man">Hadrien</div>
 
 					<div className="secondary welcome">{t('welcome')}</div>

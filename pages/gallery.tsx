@@ -16,10 +16,10 @@ const Gallery: NextPage = () => {
 
 			<div className="images-container">
 
-				<GalleryImage src="/images/photo1.jpg" alt="Helen &amp; Hadrien" height="850" width="672" className="primary" />
-				<GalleryImage src="/images/photo1.jpg" alt="Helen &amp; Hadrien" height="850" width="672" className="primary" />
-				<GalleryImage src="/images/photo1.jpg" alt="Helen &amp; Hadrien" height="850" width="672" className="primary" />
-				<GalleryImage src="/images/photo1.jpg" alt="Helen &amp; Hadrien" height="850" width="672" className="primary" />
+				<GalleryImage src="/images/photo1.jpg" alt="Helen & Hadrien" height="850" width="672" className="primary" />
+				<GalleryImage src="/images/photo1.jpg" alt="Helen & Hadrien" height="850" width="672" className="primary" />
+				<GalleryImage src="/images/photo1.jpg" alt="Helen & Hadrien" height="850" width="672" className="primary" />
+				<GalleryImage src="/images/photo1.jpg" alt="Helen & Hadrien" height="850" width="672" className="primary" />
 
 			</div>
 
