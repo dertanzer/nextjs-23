@@ -1,0 +1,31 @@
+{
+	"Button": {
+		"gift": "Cadeau",
+		"rsvp": "Réservation",
+		"share": "Partager des photos",
+		"start": "Retour",
+		"gallery": "Gallerie",
+		"info": "Info",
+		"subject": "Confirmation de présence à votre marriage"
+	},
+	"Time": {
+		"days": "jours",
+		"hours": "heures",
+		"minutes": "minutes",
+		"seconds": "secondes",
+		"date": "Samedi 23 Octobre 2021"
+	},
+	"Info": {
+		"celebration": "Célebration",
+		"ceremony": "Cérémonie",
+		"action": "Ouvrir avec Google Map"
+	},
+	"Pages": {
+		"gallery": "Gallerie"
+	},
+	"Card": {
+		"welcome": "Vous invitent",
+		"where": "À leur marriage",
+		"date": "Samedi 23 Octobre 2021"
+	}
+}
