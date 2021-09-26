@@ -1,7 +1,7 @@
 import MapSvg from '@components/MapSvg';
 import Modal from '@components/Modal';
 import { Fragment, useState } from 'react';
-import ButtonLink from './ButtonLink';
+import ButtonLink from '@components/ButtonLink';
 import { useTranslations } from 'next-intl';
 
 interface TileProps {
@@ -22,7 +22,7 @@ export const Tile: React.FC<TileProps> = ({ title, location, iframeLink, locatio
 	const time = new Intl.DateTimeFormat('default', {
 		hour: '2-digit',
 		minute: '2-digit'
-	  }).format(dateTime)
+	}).format(dateTime);
 
 	return (
 
@@ -52,9 +52,12 @@ export const Tile: React.FC<TileProps> = ({ title, location, iframeLink, locatio
 			</div>
 
 			<Modal show={show} onClose={setShow}>
+
 				<div className="title">{location}</div>
-				<iframe src={iframeLink} frameBorder="0" width="400" height="300"></iframe>
-				<ButtonLink href={locationLink} className="secondary" target="_blank">{linkText}</ButtonLink>
+					<iframe src={iframeLink} frameBorder="0" width="400" height="300">
+					</iframe>
+					<ButtonLink href={locationLink} className="secondary" target="_blank">{linkText}</ButtonLink>
+
 			</Modal>
 
 		</Fragment>

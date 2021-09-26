@@ -8,7 +8,7 @@ body {
 }
 
 html {
-	font-size: min(max(1rem, 4vw), 28px);
+	font-size: 28px;
 }
 
 body {
@@ -304,7 +304,7 @@ a.button.variant.fourth {
 		margin: 5px;
 	}
 
-	.gallery .title {
+	main[class*="gallery"] .title {
 		text-align: center;
 		margin-bottom: 70px;
 	}
@@ -362,22 +362,22 @@ a.button.variant.fourth {
 
 /* BEGIN: images */
 
-	.gallery .images-container {
+	main[class*="gallery"] .images-container {
 		display: flex;
 		flex-direction: column;
 		margin: auto;
 		max-width: 800px;
 	}
 
-	.gallery .images-container > .image-container.gallery{
+	main[class*="gallery"] .images-container > .image-container.gallery{
 		margin-bottom: -100px;
 	}
 
-	.gallery .images-container .image-container.gallery:nth-child(2n){
+	main[class*="gallery"] .images-container .image-container.gallery:nth-child(2n){
 		margin-left: auto;
 	}
 
-	.gallery .images-container .image-container.gallery:nth-child(2n + 1){
+	main[class*="gallery"] .images-container .image-container.gallery:nth-child(2n + 1){
 		margin-right: auto;
 	}
 
@@ -449,6 +449,11 @@ a.button.variant.fourth {
 	position: relative;
 	overflow: hidden;
 	margin: auto;
+	padding: 20px;
+}
+
+.card.mobile .content .lady {
+	margin-top: 10px;
 }
 
 .card.desktop .image-container {
@@ -559,6 +564,27 @@ main {
 	position: relative;
 }
 
+nav .logo {
+	color: #647A6F;
+	display: flex;
+	padding-bottom: 14px;
+	align-items: flex-end;
+	flex: 1;
+	font-family: 'GreatVibes';
+	font-size: 150%;
+	margin: 10px;
+	margin-right: 0px;
+	padding: 10px;
+}
+
+nav .logo .letter {
+	text-transform: uppercase;
+}
+
+nav .logo .number {
+	font-size: 60%;
+}
+
 nav {
 	position: fixed;
 	width: 100vw;
@@ -611,7 +637,71 @@ nav .limiter {
 	height: 100vh;
 }
 
+/* BEGIN: loader */
 
+.loader {
+	animation: spin 2s linear infinite;
+	border: 3px solid transparent;
+	border-radius: 50%;
+	border-top-color: #A67A4E;
+	display: block;
+	height: 150px;
+	left: 50%;
+	margin: -75px 0 0 -75px;
+	position: absolute;
+	top: 50%;
+	width: 150px;
+}
+
+.loader:before {
+	animation: spin 3s linear infinite;
+	content: "";
+	position: absolute;
+	border: 3px solid transparent;
+	border-radius: 50%;
+	border-top-color: #647A6F;
+	bottom: 5px;
+	left: 5px;
+	right: 5px;
+	top: 5px;
+}
+
+.loader:after {
+	animation: spin 1.5s linear infinite;
+	bottom: 15px;
+	border: 3px solid transparent;
+	border-radius: 50%;
+	border-top-color: #dcb187;
+	content: "";
+	left: 15px;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+
+@-webkit-keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+/* END: loader */
+
+.loader.loaded {
+ display: none;
+}
 
 /* BEGIN: media queries (usually not at the end like this, but project is so small */
 
@@ -621,7 +711,7 @@ nav .limiter {
 		max-width: 450px;
 	}
 
-	.gallery .images-container {
+	main[class*="gallery"] .images-container {
 		display: flex;
 		flex-direction: column;
 		margin: auto;
@@ -631,6 +721,10 @@ nav .limiter {
 }
 
 @media (max-width: 998px) {
+
+	html {
+		font-size: min(max(1rem, 4vw), 22px);
+	}
 
 	.countdown .container {
 		padding: 0 25px;
@@ -664,7 +758,7 @@ nav .limiter {
 		margin-left: 15px;
 	}
 
-	.gallery .images-container > .image-container.gallery{
+	main[class*="gallery"] .images-container > .image-container.gallery {
 		margin: auto;
 		margin-bottom: 50px;
 	}
@@ -697,7 +791,7 @@ nav .limiter {
 	}
 
 	html {
-		font-size: min(max(1rem, 4vw), 22px);
+		font-size: min(max(1rem, 4vw), 18px);
 	}
 
 	button, a.button {
@@ -719,7 +813,7 @@ nav .limiter {
 		padding-top: 100px;
 	}
 
-	.gallery .images-container > .image-container.gallery{
+	main[class*="gallery"] .images-container > .image-container.gallery{
 		max-width: 250px;
 	}
 

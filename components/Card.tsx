@@ -13,7 +13,7 @@ export const Card: React.FC = () => {
 
 			<div className="desktop card">
 
-				<ImageWrapper src="/images/card-photo.jpg" alt="photo of Hadrien & Helen" width="500" height="603" />
+				<ImageWrapper src="/images/778x984.jpg" alt="photo of Hadrien & Helen" width="778" height="984" />
 
 				<div className="content">
 
@@ -38,7 +38,7 @@ export const Card: React.FC = () => {
 
 				<div className="content">
 
-					<ImageWrapper src="/images/card-photo.jpg" alt="photo of Hadrien & Helen" width="500" height="603" className="card-photo"/>
+					<ImageWrapper src="/images/778x984.jpg" alt="photo of Hadrien & Helen" width="778" height="984" />
 
 					<div className="names lady">Helen</div>
 					<div className="primary names">&</div>

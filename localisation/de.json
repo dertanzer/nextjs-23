@@ -1,0 +1,37 @@
+{
+	"Button": {
+		"gift": "Geschenk",
+		"rsvp": "Rückmeldung",
+		"share": "Fotos teilen",
+		"start": "Start",
+		"gallery": "Gallerie",
+		"info": "Info",
+		"subject": "Rückmeldung für die Hochzeit hinterlassen"
+	},
+	"Time": {
+		"days": "Tage",
+		"hours": "Stunden",
+		"minutes": "Minuten",
+		"seconds": "Sekunden",
+		"date": "Samstag, 23. Oktober 2021"
+	},
+	"Info": {
+		"celebration": "Feier",
+		"ceremony": "Trauung",
+		"action": "In Google Maps öffnen"
+	},
+	"Pages": {
+		"gallery": "Gallerie"
+	},
+	"Card": {
+		"welcome": "Willkommen",
+		"where": "Zu ihrer Hochzeit",
+		"date": "Samstag, 23. Oktober 2021"
+	},
+
+	"Tile": {
+		"location": "Ort",
+		"time": "Uhrzeit"
+	}
+}
+

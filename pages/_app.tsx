@@ -59,8 +59,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 			<NextIntlProvider messages={pageProps.localisation}>
 				<div className="app-container">
 					<CustomScroll heightRelativeToParent="100%" onScroll={onScroll}>
+						{ /* this custom scrollbar annoyws me, can't make gap scroll trigger work properly, and does not even work properly */}
 						<AnimatedCrown angle={angle}/>
-						<Header />
+						<Header {...pageProps}/>
 						<Component {...pageProps} />
 						<Footer />
 					</CustomScroll>

@@ -16,10 +16,24 @@ const Gallery: NextPage = () => {
 
 			<div className="images-container">
 
-				<GalleryImage src="/images/photo1.jpg" alt="Helen & Hadrien" height="850" width="672" className="primary" />
-				<GalleryImage src="/images/photo1.jpg" alt="Helen & Hadrien" height="850" width="672" className="primary" />
-				<GalleryImage src="/images/photo1.jpg" alt="Helen & Hadrien" height="850" width="672" className="primary" />
-				<GalleryImage src="/images/photo1.jpg" alt="Helen & Hadrien" height="850" width="672" className="primary" />
+				<GalleryImage src="/images/778x984.jpg" alt="Helen & Hadrien" width="778" height="984" className="primary" />
+				<GalleryImage src="/images/769x512.jpg" alt="Helen & Hadrien" width="769" height="512" className="primary" />
+				<GalleryImage src="/images/960x720.jpg" alt="Helen & Hadrien" width="960" height="720" className="primary" />
+				<GalleryImage src="/images/600x800.jpg" alt="Helen's parents" width="600" height="800" className="primary" />
+				<GalleryImage src="/images/600x448.jpg" alt="Hadrien's parents" width="600" height="448" className="primary" />
+				<GalleryImage src="/images/800x533.jpg" alt="Hofgut Heidesheim" width="800" height="533" className="primary" />
+
+				<div className="image-container gallery primary">
+					<video
+						width="250"
+						loop
+						muted
+						autoPlay
+
+						>
+						<source src="/videos/wave.mp4" type="video/mp4"/>
+					</video>
+				</div>
 
 			</div>
 
