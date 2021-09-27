@@ -436,7 +436,6 @@ a.button.variant.fourth {
 .card.desktop {
 	height: 500px;
 	width: 870px;
-	background-image: url('public/images/paper-bkg.jpg');
 	display: flex;
 	position: relative;
 	overflow: hidden;
@@ -456,8 +455,16 @@ a.button.variant.fourth {
 	margin-top: 10px;
 }
 
-.card.desktop .image-container {
+.card.desktop .image-container.picture {
 	flex: 10;
+}
+
+.card.desktop .image-container.background {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 .card .content {

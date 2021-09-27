@@ -42,8 +42,6 @@ const Info: NextPage = () => {
 	)
 }
 
-// TODO: put this into a function. not DRY atm
-
 export const getStaticProps = async (context: GetStaticPropsContext) => {
 
 	return {

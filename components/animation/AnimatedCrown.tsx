@@ -5,16 +5,16 @@ interface AnimatedCrownProps {
 	angle: number,
 }
 
-export const AnimatedCrown: React.FC<AnimatedCrownProps> = ( {angle}) => {
+export const AnimatedCrown: React.FC<AnimatedCrownProps> = ( {angle} ) => {
 
 	const top = useRef<HTMLDivElement>(null);
 	const bottom = useRef<HTMLDivElement>(null);
 
-	function applyRotation(el: HTMLDivElement | null, angle: number) {
+	var applyRotation = (el: HTMLDivElement | null, angle: number) => {
 
 		if (!el) { return; }
 		el.style.transform = 'rotate(' + angle + 'deg)';
-	}
+	};
 
 
 	useEffect(() => {
@@ -31,7 +31,6 @@ export const AnimatedCrown: React.FC<AnimatedCrownProps> = ( {angle}) => {
 			<CrownImage className="animated top" innerRef={top} />
 
 			<CrownImage className="animated bottom" innerRef={bottom} />
-
 
 		</Fragment>
 	)

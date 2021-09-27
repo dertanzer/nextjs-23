@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 	const [scroll, setScroll] = useState(false);
 	const [angle, setAngle] = useState(0);
-	const [heightContainer, setHeightContainer] = useState(0)
+	const [heightContainer, setHeightContainer] = useState(0);
 
 	const BP_Y = 0;
 
@@ -37,6 +37,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 	};
 
 	useEffect(() => {
+
 		setHeightContainer(document.querySelector('.rcs-inner-container')!.scrollHeight)
 	}, []);
 
