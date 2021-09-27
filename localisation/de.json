@@ -24,14 +24,15 @@
 		"gallery": "Gallerie"
 	},
 	"Card": {
-		"welcome": "Willkommen",
-		"where": "Zu ihrer Hochzeit",
+		"welcome": "Herzlich willkommen",
+		"where": "Zu unserer Hochzeit",
 		"date": "Samstag, 23. Oktober 2021"
 	},
 
 	"Tile": {
 		"location": "Ort",
-		"time": "Uhrzeit"
+		"time": "Uhrzeit",
+		"weddingPlace": "Élizabethkapelle"
 	}
 }
 

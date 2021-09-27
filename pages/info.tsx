@@ -17,8 +17,8 @@ const Info: NextPage = () => {
 
 				<Tile
 					title={t('ceremony')}
-					location="ElizabethKapelle"
-					dateTime={new Date('October 23, 2021 14:00:00')}
+					location={t('weddingPlace')}
+					dateTime={new Date('October 23, 2021 13:50:00')}
 					locationLink="https://www.google.com/maps/d/viewer?mid=1BXNymN8xFeGxuDuQ5NT5SMx-BfZ5_Nkj&usp=sharing"
 					iframeLink="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2586.985721946568!2d8.1610715155824!3d49.57915827936464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDM0JzQ1LjAiTiA4wrAwOSc0Ny43IkU!5e0!3m2!1sfr!2sde!4v1632250967092!5m2!1sfr!2sde"
 					linkText={t('action')}
@@ -41,6 +41,8 @@ const Info: NextPage = () => {
 
 	)
 }
+
+// TODO: put this into a function. not DRY atm
 
 export const getStaticProps = async (context: GetStaticPropsContext) => {
 

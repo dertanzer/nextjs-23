@@ -9,7 +9,6 @@ interface FooterProps {
 export const Footer: React.FC<FooterProps> = () => {
 
 	const t = useTranslations('Button');
-
 	const subject = t('subject').split(' ').join('%20');
 	const email = 'hl-01@hotmail.fr';
 

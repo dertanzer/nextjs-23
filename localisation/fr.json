@@ -6,7 +6,7 @@
 		"start": "Retour",
 		"gallery": "Gallerie",
 		"info": "Info",
-		"subject": "Confirmation de présence à votre marriage"
+		"subject": "Confirmation de présence à votre mariage"
 	},
 	"Time": {
 		"days": "jours",
@@ -25,11 +25,12 @@
 	},
 	"Card": {
 		"welcome": "Sont heureux de vous recevoir",
-		"where": "À leur marriage",
+		"where": "À leur mariage",
 		"date": "Samedi 23 Octobre 2021"
 	},
 	"Tile": {
 		"location": "Lieu",
-		"time": "Heure"
+		"time": "Heure",
+		"weddingPlace": "Chapelle Élizabeth"
 	}
 }

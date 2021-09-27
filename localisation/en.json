@@ -30,6 +30,7 @@
 	},
 	"Tile": {
 		"location": "Location",
-		"time": "Time"
+		"time": "Time",
+		"weddingPlace": "Élizabeth Chapel"
 	}
 }

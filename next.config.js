@@ -5,4 +5,5 @@ module.exports = {
 		locales: ['en', 'fr', 'de'],
 		defaultLocale: 'en',
 	},
+	generateBuildId: () => 'build'
 }

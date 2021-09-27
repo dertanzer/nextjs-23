@@ -12,6 +12,7 @@ const Home: NextPage = () => {
 
 		<MainContainer>
 
+			{/* TODO: animating the card */}
 			<Card />
 
 			<CountdownWrapper />

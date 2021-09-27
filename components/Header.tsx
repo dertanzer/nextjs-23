@@ -10,16 +10,13 @@ interface HeaderProps {
 export const Header: React.FC<HeaderProps> = () => {
 
 	const t = useTranslations('Button');
-
 	const [location, setLocation] = useState('');
 	var router = useRouter();
-
 
 	useEffect(() => {
 
 		setLocation(router.pathname);
 	}, [router]);
-
 
 	return (
 		<nav>
