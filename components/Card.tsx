@@ -37,7 +37,7 @@ export const Card: React.FC = () => {
 				scroller: scrollBar,
 				scrub:    0.6,
 				start:    'top 150px',
-				end:      '+=550px'
+				end:      '+=670px'
 			},
 			defaults: {
 				rotation:0.01,
@@ -69,6 +69,7 @@ export const Card: React.FC = () => {
 			opacity: 0,
 			scale:   4,
 			rotate:  360,
+			duration: 7
 		}, '>0.7')
 		.to('.desktop.card .image-container.picture', {
 			x: 0,
