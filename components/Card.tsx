@@ -35,7 +35,7 @@ export const Card: React.FC = () => {
 				trigger:  '.desktop.card',
 				pin:      true,
 				scroller: scrollBar,
-				scrub:    0.6,
+				scrub:    0.7,
 				start:    'top 150px',
 				end:      '+=670px'
 			},
@@ -61,7 +61,7 @@ export const Card: React.FC = () => {
 		tl1.to('.desktop.card .image-container.picture', {
 			opacity: 1,
 			duration: 2,
-			delay: 0.4
+			delay: 1
 		});
 
 		tl.from('.desktop.card .content .image-container', {
@@ -73,8 +73,12 @@ export const Card: React.FC = () => {
 		}, '>0.7')
 		.to('.desktop.card .image-container.picture', {
 			x: 0,
-			duration: 2
+			duration: 4
 		}, '<')
+		.to('.desktop.card .image-container.background', {
+			opacity: 1,
+			duration: 2
+		}, '>+0.5')
 		.from('.desktop.card .content > div:nth-child(2n)', {
 			opacity:  0,
 			stagger:  0.1,
@@ -100,7 +104,7 @@ export const Card: React.FC = () => {
 
 			<div className="desktop card">
 
-				<ImageWrapper src="/images/paper-bkg.jpg" alt="Hadrien & Helen" width="500" height="707" layout="fill" className="background"/>
+				<ImageWrapper src="/images/paper-bkg.jpg" alt="Hadrien & Helen" layout="fill" className="background"/>
 
 				<ImageWrapper src="/images/778x984.jpg" alt="Hadrien & Helen" width="778" height="984" className="picture"/>
 

@@ -1,5 +1,6 @@
 import CountdownWrapper from '@components/CountdownWrapper';
 import MainContainer from '@components/MainContainer';
+import Wallpaper from '@components/Wallpaper';
 import type { GetStaticPropsContext, NextPage } from 'next';
 import React from 'react';
 import { Card } from './../components/Card';
@@ -12,10 +13,11 @@ const Home: NextPage = () => {
 
 		<MainContainer>
 
-			{/* TODO: animating the card */}
 			<Card />
 
 			<CountdownWrapper />
+
+			<Wallpaper src="/images/huguenot.png" alt="Helen & Hadrien" height="573" width="450" />
 
 		</MainContainer>
 
