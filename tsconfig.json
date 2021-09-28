@@ -27,7 +27,7 @@
 		"paths": {
 			"@components/*": ["./components/*"],
 			"@stores/*": ["./stores/*"],
-			"@hooks/*": ["./hooks/*"],
+			"@utils/*": ["utils/*"],
 		},
 		"forceConsistentCasingInFileNames": true,
 		"noEmit": true,
@@ -51,5 +51,5 @@
 		"next-env.d.ts",
 		"**/*.ts",
 		"**/*.tsx"
-, "hooks/usePathToCSSClass.js"	]
+, "utils/usePathToCSSClass.js"	]
 }

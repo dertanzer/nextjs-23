@@ -16,13 +16,13 @@ const Gallery: NextPage = () => {
 
 			<div className="images-container">
 
-				<GalleryImage src="/images/769x512.jpg" alt="Helen & Hadrien" width="769" height="512" className="primary" />
-				<GalleryImage src="/images/960x720.jpg" alt="Helen & Hadrien" width="960" height="720" className="primary" />
-				<GalleryImage src="/images/600x800.jpg" alt="Helen's parents" width="600" height="800" className="primary" />
-				<GalleryImage src="/images/600x448.jpg" alt="Hadrien's parents" width="600" height="448" className="primary" />
-				<GalleryImage src="/images/800x533.jpg" alt="Hofgut Heidesheim" width="800" height="533" className="primary" />
+				<GalleryImage src="/images/769x512.jpg" alt="Helen & Hadrien" width="769" height="512" />
+				<GalleryImage src="/images/960x720.jpg" alt="Helen & Hadrien" width="960" height="720" />
+				<GalleryImage src="/images/600x800.jpg" alt="Helen's parents" width="600" height="800" />
+				<GalleryImage src="/images/600x448.jpg" alt="Hadrien's parents" width="600" height="448" />
+				<GalleryImage src="/images/800x533.jpg" alt="Hofgut Heidesheim" width="800" height="533" />
 
-				<div className="image-container gallery primary">
+				<div className={`image-container gallery primary`}>
 					<video
 						width="250"
 						loop

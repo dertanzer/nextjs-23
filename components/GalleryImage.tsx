@@ -1,5 +1,6 @@
 import { ImageWrapper } from '@components/ImageWrapper';
 import { ImageProps } from 'next/image';
+import { memo } from 'react';
 
 interface GalleryImageProps extends ImageProps {
 	className?: string
@@ -7,8 +8,19 @@ interface GalleryImageProps extends ImageProps {
 
 export const GalleryImage: React.FC<GalleryImageProps> = ({ className = 'primary', ...props }) => {
 
+	var getRandomClassName = function () {
+
+		const classNames = [ 'primary', 'secondary', 'fourth'];
+
+		var getRandomInt = function(max: number) {
+			return Math.floor(Math.random() * max);
+		};
+
+		return classNames[getRandomInt(3)];
+	};
+
 	return (
-		<ImageWrapper {...props} className={`gallery ${className}`} />
+		<ImageWrapper {...props} className={`gallery ${className} ${getRandomClassName()}`}/>
 	)
 }
-export default GalleryImage
+export default memo(GalleryImage)

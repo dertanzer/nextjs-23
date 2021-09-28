@@ -3,12 +3,8 @@ import { ImageWrapper } from '@components/ImageWrapper';
 import { useTranslations } from 'next-intl';
 import { Fragment } from 'react';
 import { useEffect } from 'react';
-
 import { gsap } from 'gsap';
-import ScrollTrigger from 'gsap/dist/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
-
+import '/utils/scrollerProxy';
 
 export const Card: React.FC = () => {
 
@@ -17,18 +13,6 @@ export const Card: React.FC = () => {
 	useEffect(() => {
 
 		var scrollBar = document.querySelector('.rcs-inner-container');
-
-		ScrollTrigger.scrollerProxy(scrollBar, {
-			scrollTop(value) {
-				if (arguments.length) {
-					scrollBar!.scrollTop = value as number;
-				}
-				return scrollBar!.scrollTop;
-			},
-			getBoundingClientRect() {
-				return { top: 0, left: 0,width: window.innerWidth, height: window.innerHeight}
-			}
-		});
 
 		let tl = gsap.timeline({
 			scrollTrigger: {
@@ -40,8 +24,8 @@ export const Card: React.FC = () => {
 				end:      '+=670px'
 			},
 			defaults: {
-				rotation:0.01,
-				z:0.01,
+				rotation: 0.01,
+				z:        0.01,
 				duration: 1
 			}
 		});
@@ -59,16 +43,16 @@ export const Card: React.FC = () => {
 		});
 
 		tl1.to('.desktop.card .image-container.picture', {
-			opacity: 1,
+			opacity:  1,
 			duration: 2,
-			delay: 1
+			delay:    1
 		});
 
 		tl.from('.desktop.card .content .image-container', {
-			x:       200,
-			opacity: 0,
-			scale:   4,
-			rotate:  360,
+			x:        200,
+			opacity:  0,
+			scale:    4,
+			rotate:   360,
 			duration: 7
 		}, '>0.7')
 		.to('.desktop.card .image-container.picture', {
@@ -76,7 +60,7 @@ export const Card: React.FC = () => {
 			duration: 4
 		}, '<')
 		.to('.desktop.card .image-container.background', {
-			opacity: 1,
+			opacity:  1,
 			duration: 2
 		}, '>+0.5')
 		.from('.desktop.card .content > div:nth-child(2n)', {
@@ -104,7 +88,7 @@ export const Card: React.FC = () => {
 
 			<div className="desktop card">
 
-				<ImageWrapper src="/images/paper-bkg.jpg" alt="Hadrien & Helen" layout="fill" className="background"/>
+				<ImageWrapper src="/images/paper-bkg.jpg" alt="Hadrien & Helen" width="900" height="635" className="background"/>
 
 				<ImageWrapper src="/images/778x984.jpg" alt="Hadrien & Helen" width="778" height="984" className="picture"/>
 
