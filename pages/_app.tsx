@@ -17,6 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 	const BP_Y = 0;
 
+	// TODO rewrite using gsap
 	const onScroll = () => {
 
 		var footerBottomY = Math.floor(document.querySelector('footer')!.getBoundingClientRect().bottom);
@@ -60,7 +61,6 @@ function MyApp({ Component, pageProps }: AppProps) {
 			<NextIntlProvider messages={pageProps.localisation}>
 				<div className="app-container">
 					<CustomScroll heightRelativeToParent="100%" onScroll={onScroll}>
-						{ /* this custom scrollbar annoyws me, can't make gap scroll trigger work properly, and does not even work properly */}
 						<AnimatedCrown angle={angle}/>
 						<Header {...pageProps}/>
 						<Component {...pageProps} />

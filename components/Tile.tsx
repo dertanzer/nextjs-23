@@ -54,9 +54,9 @@ export const Tile: React.FC<TileProps> = ({ title, location, iframeLink, locatio
 			<Modal show={show} onClose={setShow}>
 
 				<div className="title">{location}</div>
-					<iframe src={iframeLink} frameBorder="0" width="400" height="300">
-					</iframe>
-					<ButtonLink href={locationLink} className="secondary" target="_blank">{linkText}</ButtonLink>
+				<iframe src={iframeLink} frameBorder="0" width="400" height="300">
+				</iframe>
+				<ButtonLink href={locationLink} className="secondary" target="_blank">{linkText}</ButtonLink>
 
 			</Modal>
 
