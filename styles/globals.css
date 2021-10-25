@@ -207,22 +207,22 @@ a.button.variant.fourth {
 	font-family: 'GreatVibes';
 }
 
-.countdown .image-container {
+.countdown .dove {
 	max-width: 30px;
 }
 
-.countdown .image-container.horizontal-flip {
+.countdown .dove.horizontal-flip {
 	-webkit-transform: scaleX(-1);
 	transform: scaleX(-1);
 }
 
-.image-container.animated{
+.image-container.animated {
 	opacity: 0.4;
 	position: fixed;
 	width: 500px;
 }
 
-.image-container.animated.top{
+.image-container.animated.top {
 	left: -250px;
 	top: -250px;
 }

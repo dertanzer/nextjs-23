@@ -31,9 +31,9 @@ export const CountdownWrapper: React.FC<CountdownWrapper> = () => {
 			<div className="countdown">
 
 				<div className="heading">
-					<ImageWrapper src="/images/dove-green.png" alt="dove" layout="intrinsic" width="100" height="129" />
+					<ImageWrapper src="/images/dove-green.png" alt="dove" layout="intrinsic" width="100" height="129" className="dove"/>
 					<div className="text">{t('date')}</div>
-					<ImageWrapper src="/images/dove-green.png" alt="dove" layout="intrinsic" width="100" height="129" className="horizontal-flip" />
+					<ImageWrapper src="/images/dove-green.png" alt="dove" layout="intrinsic" width="100" height="129" className="horizontal-flip dove" />
 				</div>
 
 				<Countdown
@@ -60,7 +60,9 @@ const renderer = ({ days, hours, minutes, seconds, completed, props }: rendererP
 
 	if (completed) {
 
-		// TODO: picture
+		return (
+			<ImageWrapper src="/images/married.jpg" alt="bride and bridegroom" width="1281" height="1920"/>
+		)
 
 	} else {
 		return (
